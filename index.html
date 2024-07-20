@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>49/2</h1>
+  </header>
+
+  <main>
+    <section class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search by name, phone, email, or ID">
+      <button id="searchButton">Search</button>
+      <button id="deleteButton">Delete Contacts</button>
+      <button id="openPopup">Create New Contact</button>
+    </section>
+    <section class="contact-list">
+      <h2>Contacts List</h2>
+      <ul id="contactList">
+        <!-- Contact items will be added dynamically here -->
+      </ul>
+    </section>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2 id="popupTitle">Create or Edit Contact</h2>
+        <form id="contactForm">
+          <input type="hidden" id="contactIndex">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="text" id="phone" placeholder="Phone" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="text" id="id" placeholder="ID" required>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; All rights reserved, Pixabay &copy; .</p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+
+</html>
